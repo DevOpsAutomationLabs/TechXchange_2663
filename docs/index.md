@@ -29,7 +29,8 @@ We now want to apply the same principles of standardization and automation furth
 
 This means we support how your team creates architecture designs and specifications, and treat this design "as code".  
 
-When designs are documented clearly and are connected to the implementation: 
+When designs are documented clearly and are connected to the implementation:
+ 
 - developers spend their time on business logic instead of boilerplate, 
 - architectural decisions are applied consistently, 
 - and specifications are turned directly into code generation and integrations. 
@@ -54,7 +55,8 @@ That’s where you come in. Today, you’ll step into the shoes of the developer
 
 ## Objectives
 
-By the end of this lab, you will: 
+By the end of this lab, you will:
+
 - Experience how architecture is a living model that evolves alongside business needs and see how to capture such changes directly in the Workbench’s System Architecture Design project
 
 - Learn how to provide clear developer guidance by documenting design choices in an Architecture Decision Record (ADR) 
@@ -83,9 +85,9 @@ Here are the environments you will work with during the lab.
 
 | Component | URL |
 |---|---|
-| IBM Solution Designer | https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com |
-| IBM Solution Hub | https://k5-hub-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com | 
-| OpenShift Console | https://console-openshift-console.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/ | 
+| IBM Solution Designer | [https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com](https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com) |
+| IBM Solution Hub | [https://k5-hub-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com](https://k5-hub-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com) | 
+| OpenShift Console | [https://console-openshift-console.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/](https://console-openshift-console.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/) | 
 
 ## Guide
 ### Model the Change
@@ -102,18 +104,18 @@ We have prepared a branch for you to work in that is named after your username y
 
 - Since you are accessing the environment for the first time, you will be asked for your credentials here. Please ask your instructor to give you a username and password. 
 
-- Open the System Architecture Design Project of RoboFlow at https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/#/ROBOFLOWAP/Track/your-username/Solution. Replace \<your-username> in the link with your username.  
+- Open the System Architecture Design Project of RoboFlow at https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/#/ROBOFLOWAP/Track/**your-username**/Solution. Replace "your-username" in the link with your username.  
 
-- Take a moment to explore: https://learning-devops-solution-workbench.knowis.cloud/docs/examples/roboflow/architecture/. Look at the actors, relationships, the different diagram levels, ... 
+- Take a moment to explore: [Learning Center | RoboFlow Architecture](https://learning-devops-solution-workbench.knowis.cloud/docs/examples/roboflow/architecture/). Look at the actors, relationships, the different diagram levels, ... 
 
 ### Add a new Actor and Relationships
 Next, you extend the system model to represent the new internal user group. This ensures that everyone sees how the system will interact with the new internal actor. 
 
 We want to add the new Actor “Research and Development” to the Level 1 and the Level 2 diagram. 
 
-- In the System Architecture Design Project, add a new Actor called “Research and Development”. Refer to https://learning-devops-solution-workbench.knowis.cloud/docs/training/architect/unit2/#step-1-create-model-elements to learn how to do this. 
+- In the System Architecture Design Project, add a new Actor called “Research and Development”. Refer to [Learning Center | Create model elements](https://learning-devops-solution-workbench.knowis.cloud/docs/training/architect/unit2/#step-1-create-model-elements) to learn how to do this. 
 
-- In https://learning-devops-solution-workbench.knowis.cloud/docs/training/architect/unit2/#step-2-create-a-level-1-diagram you learn how to create a new diagram, how to add model elements like actors to it and to create relationships between them. We will apply this learning to: 
+- In [Learning Center | Create a level 1 diagram](https://learning-devops-solution-workbench.knowis.cloud/docs/training/architect/unit2/#step-2-create-a-level-1-diagram) you learn how to create a new diagram, how to add model elements like actors to it and to create relationships between them. We will apply this learning to: 
 
     - Add the new Actor in the L1 Diagram „Solution Overview“ 
 
@@ -135,11 +137,11 @@ The IBM DevOps Solution Workbench supports you by allowing to capture design dec
 #### Create an Architecture Decision Record for the Orders Container
 As often is the case, there are several ways to solve a problem and rarely is any single solution perfect. You will now capture the key decision on how to support internal orders in our implementation by documenting an Architecture Decision Record (ADR). 
 
-- Select the Orders Container in the L2 diagram and go to its “Loop” tab. Loop is where we connect our architecture to decisions, our specification, its implementation, and so on. Refer to https://learning-devops-solution-workbench.knowis.cloud/docs/training/architect/unit3/#step-1-loop-and-links for an overview of what you can do in the Loop tab. 
+- Select the Orders Container in the L2 diagram and go to its “Loop” tab. Loop is where we connect our architecture to decisions, our specification, its implementation, and so on. Refer to [Learning Center | Loop and links](https://learning-devops-solution-workbench.knowis.cloud/docs/training/architect/unit3/#step-1-loop-and-links) for an overview of what you can do in the Loop tab. 
 
 - Navigate to the "Decisions" sections, create a new decision and call it “Support of internal orders”. 
 
-- Use the ADR Sidekick to help you fill out the context, solution options and decision for you. Here is how the ADR Sidekick works: https://learning-devops-solution-workbench.knowis.cloud/docs/training/architect/unit4/#adr-sidekick-ai-powered-assistance. You can use one of the suggested prompts or write your own. For example you can use: Create a structured description with context, solution and decision on how internal orders by research and development can be considered in the architecture.
+- Use the ADR Sidekick to help you fill out the context, solution options and decision for you. Here is how the ADR Sidekick works: [Learning Center | ADR Sidekick](https://learning-devops-solution-workbench.knowis.cloud/docs/training/architect/unit4/#adr-sidekick-ai-powered-assistance). You can use one of the suggested prompts or write your own. For example you can use: Create a structured description with context, solution and decision on how internal orders by research and development can be considered in the architecture.
 
 Now, we clearly documented how this change is going to be implemented. Our developers can always connect the architecture to the decision via the Loop tab and can now start implementing this change.
 
@@ -163,11 +165,11 @@ Rather than starting from scratch, the Workbench provides assets that serve as t
 
 Let’s use an asset to start working on the current state of the Order service and adjust its design so we can differentiate between Internal and Customer Orders. 
 
-Caution: The asset you are going to use in this step is called Order_Java_Design_TechXChange (ORDERJTXC). It has a different name than the one described in the guide linked in step 1.
+Caution: The asset you are going to use in this step is called **Order_Java_Design_TechXChange (ORDERJTXC)**. It has a different name than the one described in the guide linked in step 1.
 
 1. Click on the “+”-symbol in the header bar and then on "New project” to create a new project.
 
-2. Create a new project from an asset as described here: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/introduction/#preparation---create-project-and-use-of-assets. Please select techxchange25 as the repository group.
+2. Create a new project from an asset as described here: [Learning Center | Create a project from an asset](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/introduction/#preparation---create-project-and-use-of-assets). Please select techxchange25 as the repository group.
 
 3. After the project is created, you can go into the projects section and search for your created project.
 
@@ -181,9 +183,9 @@ What we want to do here is make our Order entity abstract and create two child e
 
 We also need a new Factory Command that instantiates either a CustomerOrder or an InternalOrder. 
 
-1. Make Order abstract and create two child entities CustomerOrder and InternalOrder: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-entities/  
+1. Make Order abstract and create two child entities CustomerOrder and InternalOrder: [Learning Center | Design entities](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-entities/)  
 
-2. Create a factory command that instantiates either a CustomerOrder or an InternalOrder based on an orderType enum and a referenceId: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-commands/ (only Step 1-3) 
+2. Create a factory command that instantiates either a CustomerOrder or an InternalOrder based on an orderType enum and a referenceId: [Learning Center | Design Commands](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-commands/) (only Step 1-3) 
 
 To get the most out of this lab, you will not implement all possible design elements now. Still, we would like to share how the Orders service could be extended. 
 
@@ -197,11 +199,11 @@ To get the most out of this lab, you will not implement all possible design elem
 
 In this lab, you won’t implement all of these, but you can explore them later in the Learning Center if you want to deepen your understanding. 
 
-- Designing Instance Commands: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-commands/#step-4-create-instance-command 
+- Designing Instance Commands: [Learning Center | Design Instance Command](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-commands/#step-4-create-instance-command) 
 
-- Designing a Domain Service: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service/  
+- Designing a Domain Service: [Learning Center | Design Domain Service](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service/)  
 
-- Designing Agents: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-agent/
+- Designing Agents: [Learning Center | Design Agents](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-agent/)
 
 
 ##### API Namespace
@@ -211,7 +213,7 @@ To simplify the creation of REST APIs within a service project, IBM DevOps Solut
 
 Since we are changing the existing API, we do not need to model a new path but instead change the API schema. 
 
-1. Adjust the API schema of the existing API namespace to include the orderType enum. https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/create-api-schemas/ 
+1. Adjust the API schema of the existing API namespace to include the orderType enum. [Learning Center | Create API schemas](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/create-api-schemas/) 
 
 ##### Integration Namespace
 The final aspect we want to consider is integration. In our scenario, the Orders service should send a confirmation email whenever an order is placed. To support this, we will integrate with an email service. 
@@ -220,9 +222,9 @@ These external interactions are designed in the Integration Namespace. It helps 
 
 For the confirmation mail to be sent, we need to create a new API dependency of the Email service, design an Integration Service and map the input parameters. 
 
-- Create a new API dependency, create the Integration Service and map the parameters: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service-integration/  
+- Create a new API dependency, create the Integration Service and map the parameters: [Learning Center | Design service integration](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service-integration/)  
 
-- With this, we are done modelling our changes and we can commit everything to the Git repository, just as with any other artifact in the Workbench: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service-integration/#step-5-commit-and-push-changes
+- With this, we are done modelling our changes and we can commit everything to the Git repository, just as with any other artifact in the Workbench: [Learning Center | Commit and push changes](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service-integration/#step-5-commit-and-push-changes)
 
 #### Implement your changes
 To continue with the implementation, you can choose any IDE of your choice. For this lab, we set up Microsoft Visual Studio Code for you.  
@@ -247,18 +249,18 @@ This is an expected error and will be fixed after implementing the required chan
 
 1. Open a terminal on your machine type k5 login to authenticate. 
 
-2. Go to https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/#/ORDERCOTXC/Track/main/Solution and expand the Solution CLI section in the bottom.  
+2. Go to [Solution Designer | ORDERCOTXC project](https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/#/ORDERCOTXC/Track/main/Solution) and expand the Solution CLI section in the bottom.  
 
 3. Follow the instructions to clone the project and trigger the code generation. 
 
 4. Open src/main/java/com/k5/ordercotxc/domain/ord/command/OrderCommand.java to change the Factory Command. 
 
-5. Change the Command to differentiate between Internal Order and Customer Order. The full code can be found here: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/implement-commands/. 
+5. Change the Command to differentiate between Internal Order and Customer Order. The full code can be found here: [Learning Center | Implement commands](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/implement-commands/). 
 Hint: You do **not** need to implement the Instance Command (Step 2). 
 
 6. Open /src/main/java/com/k5/ordercotxc/api/v1/OrdersApiV1Provider.java to change the API implementation to send the confirmation email only to external customers. 
 
-7. Change the API implementation to send the confirmation mail only when the orderType is a customer order. The full code can be found here: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/implement-api-operation/ 
+7. Change the API implementation to send the confirmation mail only when the orderType is a customer order. The full code can be found here: [Learning Center | Implement API operations](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/implement-api-operation/) 
 
 Great, we have implemented all the required changes. Now we can build, deploy and test our change. 
 
@@ -269,11 +271,11 @@ Open the finished project for your user that we have created in advance of this 
 
 The project you are going to use is named ORDER followed by your username. For example if your username is user01, your project is ORDERUSER01. 
 
-1. First, we want to create and run a release pipeline that builds our project and publishes it to the component registry. https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-1-create-and-run-a-release-pipeline  
+1. First, we want to create and run a release pipeline that builds our project and publishes it to the component registry. [Learning Center | Create and run a release pipeline](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-1-create-and-run-a-release-pipeline)
 
-2. The next step is to create and run a deploy pipeline, which deploys our projects to our Red Hat OpenShift cluster: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-2-create-and-run-a-deploy-pipeline  
+2. The next step is to create and run a deploy pipeline, which deploys our projects to our Red Hat OpenShift cluster: [Learning Center | Create and run a deploy pipeline](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-2-create-and-run-a-deploy-pipeline)  
 
-3. And as the last step, you can now test the API and check whether you receive an order confirmation mail: https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-3-discover-the-deployed-service-and-try-out-the-api
+3. And as the last step, you can now test the API and check whether you receive an order confirmation mail: [Learning Center | Discover the deployed service](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-3-discover-the-deployed-service-and-try-out-the-api)
 
 Congratulations, you have successfully built, deployed and tested the updated Orders service.
 
