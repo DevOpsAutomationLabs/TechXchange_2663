@@ -30,7 +30,7 @@ We now want to apply the same principles of standardization and automation furth
 This means we support how your team creates architecture designs and specifications, and treat this design "as code".  
 
 When designs are documented clearly and are connected to the implementation:
- 
+
 - developers spend their time on business logic instead of boilerplate, 
 - architectural decisions are applied consistently, 
 - and specifications are turned directly into code generation and integrations. 
@@ -104,7 +104,7 @@ We have prepared a branch for you to work in that is named after your username y
 
 - Since you are accessing the environment for the first time, you will be asked for your credentials here. Please ask your instructor to give you a username and password. 
 
-- Open the System Architecture Design Project of RoboFlow at https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/#/ROBOFLOWAP/Track/**your-username**/Solution. Replace "your-username" in the link with your username.  
+- Open the System Architecture Design Project of RoboFlow at https://k5-designer-dsw-tools.apps.itz-pyg2bq.hub01-lb.techzone.ibm.com/#/ROBOFLOWAPTXC/Track/**your-username**/Solution. Replace "your-username" in the link with your username.  
 
 - Take a moment to explore: [Learning Center | RoboFlow Architecture](https://learning-devops-solution-workbench.knowis.cloud/docs/examples/roboflow/architecture/). Look at the actors, relationships, the different diagram levels, ... 
 
@@ -169,7 +169,7 @@ Caution: The asset you are going to use in this step is called **Order_Java_Desi
 
 1. Click on the “+”-symbol in the header bar and then on "New project” to create a new project.
 
-2. Create a new project from an asset as described here: [Learning Center | Create a project from an asset](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/introduction/#preparation---create-project-and-use-of-assets). Please select techxchange25 as the repository group.
+2. Create a new project from an asset as described here: [Learning Center | Create a project from an asset](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/introduction/#preparation---create-project-and-use-of-assets). Please select **techxchange25** as the repository group.
 
 3. After the project is created, you can go into the projects section and search for your created project.
 
@@ -222,9 +222,9 @@ These external interactions are designed in the Integration Namespace. It helps 
 
 For the confirmation mail to be sent, we need to create a new API dependency of the Email service, design an Integration Service and map the input parameters. 
 
-- Create a new API dependency, create the Integration Service and map the parameters: [Learning Center | Design service integration](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service-integration/)  
+1. Create a new API dependency, create the Integration Service and map the parameters: [Learning Center | Design service integration](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service-integration/)  
 
-- With this, we are done modelling our changes and we can commit everything to the Git repository, just as with any other artifact in the Workbench: [Learning Center | Commit and push changes](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service-integration/#step-5-commit-and-push-changes)
+2. With this, we are done modelling our changes and we can commit everything to the Git repository, just as with any other artifact in the Workbench: [Learning Center | Commit and push changes](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/design-service-integration/#step-5-commit-and-push-changes)
 
 #### Implement your changes
 To continue with the implementation, you can choose any IDE of your choice. For this lab, we set up Microsoft Visual Studio Code for you.  
@@ -275,7 +275,31 @@ The project you are going to use is named ORDER followed by your username. For e
 
 2. The next step is to create and run a deploy pipeline, which deploys our projects to our Red Hat OpenShift cluster: [Learning Center | Create and run a deploy pipeline](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-2-create-and-run-a-deploy-pipeline)  
 
-3. And as the last step, you can now test the API and check whether you receive an order confirmation mail: [Learning Center | Discover the deployed service](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-3-discover-the-deployed-service-and-try-out-the-api)
+3. And as the last step, you can now test the API: [Learning Center | Discover the deployed service](https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/deploy-project/#step-3-discover-the-deployed-service-and-try-out-the-api) 
+As example data you can use: 
+```
+{
+  "totalPrice": {
+    "value": 650,
+    "currency_code": "EUR"
+  },
+  "referenceId": "your@email.com",
+  "orderItems": [
+    {
+      "productId": "67dd48cf8f001035456f8676",
+      "quantity": 1,
+      "price": {
+        "value": 650,
+        "currency_code": "EUR"
+      },
+      "name": "Robotic Gripper Component",
+      "description": "This gripper features dual claw mechanisms with rubberized tips, hydraulic actuators, and bolt connections, crafted from steel for heavy-duty tasks.",
+      "productCategory": "Grippers and Tools"
+    }
+  ],
+  "orderType": "CUSTOMER"
+}
+```
 
 Congratulations, you have successfully built, deployed and tested the updated Orders service.
 
