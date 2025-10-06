@@ -18,7 +18,7 @@
     
     
       
-        <title>TechXchange 2025 - Lab 2663 - Alternative Path (Read Only) - DevOps Solution Workbench Lab 2663 at TechXchange 2025</title>
+        <title>TechXChange 2025 - Lab 2663 - Alternative Path (Read Only) - DevOps Solution Workbench Lab 2663 at TechXchange 2025</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TechXchange 2025 - Lab 2663 - Alternative Path (Read Only)
+              TechXChange 2025 - Lab 2663 - Alternative Path (Read Only)
             
           </span>
         </div>
@@ -228,7 +228,7 @@
   
     
   
-  TechXchange 2025 - Lab 2663 - Alternative Path (Read Only)
+  TechXChange 2025 - Lab 2663 - Alternative Path (Read Only)
 
       </a>
     </li>
@@ -319,7 +319,7 @@
   
   
   <span class="md-ellipsis">
-    TechXchange 2025 - Lab 2663 - Alternative Path (Read Only)
+    TechXChange 2025 - Lab 2663 - Alternative Path (Read Only)
     
   </span>
   
@@ -332,7 +332,7 @@
   
   
   <span class="md-ellipsis">
-    TechXchange 2025 - Lab 2663 - Alternative Path (Read Only)
+    TechXChange 2025 - Lab 2663 - Alternative Path (Read Only)
     
   </span>
   
@@ -361,6 +361,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Implement your changes (read only path)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-generated-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-generated files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before-and-after-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before and after implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -387,10 +420,26 @@
 
 
 
-<h1 id="techxchange-2025-lab-2663-alternative-path-read-only">TechXchange 2025 - Lab 2663 - Alternative Path (Read Only)</h1>
+<h1 id="techxchange-2025-lab-2663-alternative-path-read-only">TechXChange 2025 - Lab 2663 - Alternative Path (Read Only)</h1>
 <h2 id="implement-your-changes-read-only-path">Implement your changes (read only path)</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id mauris id libero varius molestie eu non magna. Praesent porta sapien eros, eget rhoncus massa malesuada eu. Etiam rutrum odio sit amet magna condimentum elementum. Donec condimentum mi maximus, commodo mi eu, ultricies justo. Pellentesque venenatis molestie rutrum. Vivamus justo sapien, facilisis quis urna at, rhoncus pellentesque neque. Quisque iaculis arcu sed ligula faucibus hendrerit. Mauris velit ipsum, vehicula sit amet dolor id, mollis accumsan dui. Vestibulum feugiat interdum tellus, vitae blandit leo luctus vel. Donec pharetra molestie metus, sit amet malesuada neque consectetur id. Suspendisse euismod lorem nec metus lacinia scelerisque. Aenean porta in magna egestas sagittis. Sed accumsan ullamcorper eros sit amet porta. Nunc et consectetur erat.</p>
-<p>Vestibulum bibendum, magna ac pellentesque congue, magna enim condimentum eros, at pulvinar dolor enim id quam. Aliquam eget sapien vitae mauris malesuada vehicula. Vestibulum placerat, risus vitae tempus ultrices, nisi purus aliquam lectus, sollicitudin laoreet ipsum dolor in orci. Phasellus cursus aliquet posuere. Aenean quis urna a ipsum lobortis laoreet a in libero. Curabitur mi neque, varius in dolor nec, ullamcorper mollis mi. Phasellus lacinia, lorem consectetur elementum maximus, sem purus venenatis mi, nec convallis augue nunc vitae sem. Curabitur id mollis turpis, nec vestibulum orci. Fusce ac semper nisi, eget vehicula elit. Sed sit amet nulla justo.</p>
+<p>To start with the implementation you would now clone the project into your local development environment.
+To do this you use the k5 Solution CLI, our command-line interface, to pull the code into your development environment and to generate the boilerplate code based on the design files.</p>
+<p>In our example, the distinction between CustomerOrder and InternalOrder was introduced as well as the orderType enum to differentiate between the two in the API. The API of another service got added as an integration namespace as well. For all of the above changes, the boilerplate code needed will be generated for us.</p>
+<p>As soon as we clone the project, code generation begins and creates new files based on the design files.</p>
+<h3 id="auto-generated-files">Auto-generated files</h3>
+<p>Since we added two new entities, each with a factory and instance commands, two new files, CustomerOrderCommand.java and InternalOrderCommand.java, were created. The files contain the auto-generated classes with the empty methods.</p>
+<p>The other changes we made are also reflected in our project. The PostMail.java got generated to integrate the external API.</p>
+<p>Everything from properties to methods of the classes are generated and ready to use in your business logic.</p>
+<h3 id="before-and-after-implementation">Before and after implementation</h3>
+<p>You can take a look at <em>git-link</em> to see the project after the code generation but before implementation.
+As we only made the changes in the designer and haven't adjusted our code yet, you can take a look at the src/main/java/com/k5/ordercotxc01/domain/ord/command/OrderCommand.java file to see the implementation of the createOrder command before our change.</p>
+<p>You can also take a look at the src/main/java/com/knowis/ordercotxc01/integration/email/service/PostMail.java file to see the generated file for the integrated service.</p>
+<p>Take a few moments to explore the project and then continue with the finished project.</p>
+<p>You can see the finished project with all the changes at <em>git-link</em>.
+We now differentiate between internal and customer orders in the src/main/java/com/k5/ordercotxc02/domain/ord/command/OrderCommand.java file and the src/main/java/com/knowis/ordercotxc02/integration/email/service/PostMail.java implementation got added.</p>
+<p>We also changed the implementation of the src/main/java/com/k5/ordercotxc02/api/v1/OrdersApiV1Provider.java to send a confirmation email to external customers.</p>
+<h3 id="additional-information">Additional information</h3>
+<p>To learn more about the code-generation, the implementation of the order command and the orders API you can visit <a href="https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/implement-commands/">Learning Center | Implement commands</a> and <a href="https://learning-devops-solution-workbench.knowis.cloud/docs/training/domainService/implement-api-operation/">Learning Center | Implement API operation</a>. You can also take a look at the other units in the Learning Center to learn more about the IBM DevOps Solution Workbench.</p>
 
 
 
