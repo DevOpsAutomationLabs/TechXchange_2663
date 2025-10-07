@@ -10,11 +10,14 @@ In our example, the distinction between CustomerOrder and InternalOrder was intr
 As soon as we clone the project, code generation begins and creates new files based on the design files.
 
 ### Auto-generated files
+
 Since we added two new entities, each with a factory and instance commands, two new files, CustomerOrderCommand.java and InternalOrderCommand.java, were created. The files contain the auto-generated classes with the empty methods.
 
 The other changes we made are also reflected in our project. The PostMail.java got generated to integrate the external API.
 
 Everything from properties to methods of the classes are generated and ready to use in your business logic.
+
+> For easy navigation just like in an IDE, you can use the WebIDE from our GitLab. You can open it either by pressing the **"."** key or by selecting **Code > Open with Web IDE**.
 
 ### Before implementation
 
