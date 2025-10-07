@@ -10,25 +10,30 @@ In our example, the distinction between CustomerOrder and InternalOrder was intr
 As soon as we clone the project, code generation begins and creates new files based on the design files.
 
 ### Auto-generated files
+
 Since we added two new entities, each with a factory and instance commands, two new files, CustomerOrderCommand.java and InternalOrderCommand.java, were created. The files contain the auto-generated classes with the empty methods.
 
 The other changes we made are also reflected in our project. The PostMail.java got generated to integrate the external API.
 
 Everything from properties to methods of the classes are generated and ready to use in your business logic.
 
-### Before and after implementation
+> For easy navigation just like in an IDE, you can use the WebIDE from our GitLab. You can open it either by pressing the **"."** key or by selecting **Code > Open with Web IDE**.
 
-You can take a look at *git-link* to see the project after the code generation but before implementation.
-As we only made the changes in the designer and haven't adjusted our code yet, you can take a look at the src/main/java/com/k5/ordercotxc01/domain/ord/command/OrderCommand.java file to see the implementation of the createOrder command before our change.
+### Before implementation
+
+You can take a look at [ORDERCOTXC01 | Before implementation](https://edu-gitlab.apps.openshift-01.knowis.cloud/techxchange25/ordercotxc01) to see the project after the code generation but before implementation.
+As we only made the changes in the designer and haven't adjusted our code yet, you can see the implementation of the createOrder method before our changes in the src/main/java/com/k5/ordercotxc01/domain/ord/command/OrderCommand.java file. You can also see the boilerplate code generated for src/main/java/com/k5/ordercotxc01/domain/ord/command/CustomerOrderCommand.java and src/main/java/com/k5/ordercotxc01/domain/ord/command/InternalOrderCommand.java.
 
 You can also take a look at the src/main/java/com/knowis/ordercotxc01/integration/email/service/PostMail.java file to see the generated file for the integrated service.
 
 Take a few moments to explore the project and then continue with the finished project.
 
-You can see the finished project with all the changes at *git-link*.
+### After implementation
+
+You can see the finished project with all the changes at [ORDERCOTXC02 | After implementation](https://edu-gitlab.apps.openshift-01.knowis.cloud/techxchange25/ordercotxc02).
 We now differentiate between internal and customer orders in the src/main/java/com/k5/ordercotxc02/domain/ord/command/OrderCommand.java file and the src/main/java/com/knowis/ordercotxc02/integration/email/service/PostMail.java implementation got added.
 
-We also changed the implementation of the src/main/java/com/k5/ordercotxc02/api/v1/OrdersApiV1Provider.java to send a confirmation email to external customers.
+We also changed the implementation of the src/main/java/com/k5/ordercotxc02/api/v1/OrdersApiV1Provider.java to send a confirmation email only to external customers.
 
 ### Additional information
 
